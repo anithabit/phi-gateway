@@ -1,0 +1,12 @@
+# Python junk
+__pycache__/
+*.pyc
+venv/
+
+# Secrets - NEVER commit these
+.env
+
+# Big files that don't belong in Git
+models/
+*.bin
+*.safetensors
