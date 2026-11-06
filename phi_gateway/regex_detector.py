@@ -1,7 +1,7 @@
 import re
 PATTERNS = {
     "EMAIL": r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
-    "PHONE": r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]\d{4}",
+    "PHONE": r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}",
 }
 
 
