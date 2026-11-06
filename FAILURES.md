@@ -6,15 +6,15 @@ A log of things that went wrong, written as I go.
 
 \## Template
 
-\### \[date] Short title
+\### \[date] error  - 2026-11-06 First git push failed with "Invalid username or token"
 
-\- What I tried:
+\- What I tried:   git push -u origin main to my new GitHub repo.
 
-\- What went wrong:
+\- What went wrong:  Authentication failed and no login window appeared.
 
-\- Why:
+\- Why: No credential helper was set in my global Git config, so Git could not open the browser sign-in. GitHub does      not accept account passwords for Git
 
-\- Fix:
+\- Fix: - et the credential helper with `git config --global credential.helper manager`, then pushed again. A browser sign-in opened and the push worked.
 
-\- Lesson:
+
 
