@@ -2,7 +2,7 @@ from phi_gateway.gateway import deidentify, rehydrate
 from phi_gateway.llm import ask_llm
 
 NOTE = """Patient seen today. Contact daughter at 555-999-1111 or anna.r@mail.com.
-If no answer, try 555-999-1111 again or the clinic line 555-777-1200. Backup: 5551234567."""
+If no answer, try 555-999-1111 again or the clinic line 555-777-1200. Backup: 5551234567.SSN: 123-45-6789."""
 
 INSTRUCTION = (
     "Summarise the clinical note below in 2 sentences. "
