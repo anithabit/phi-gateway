@@ -1,0 +1,22 @@
+CARDIOLOGY CLINIC
+Patient [[NAME|Ethan Brooks]], 52, seen on [[DATE|04/01/2025]] at [[LOCATION|Harbor Heart Center]].
+Echo shows EF 45%. Started bisoprolol 2.5 mg daily.
+Contact: [[EMAIL|ethan.brooks@example.com]]   MRN: [[MRN|00671920]]
+---
+Phone msg [[DATE|March 30, 2025]]: [[NAME|Joy Patel]] called from [[PHONE|(555) 288-4410]] about her grandfather [[NAME|Arthur Patel]], [[AGE|93]] years old.
+He has had diarrhea for 4 days. Advised fluids and visit if worse.
+---
+REFERRAL
+To: Dr. [[NAME|Hannah Weiss]], [[LOCATION|Bayside Rheumatology]]
+Re: [[NAME|Carlos Mendes]], DOB [[DATE|05/17/1975]], address [[LOCATION|9 Willow Street]], [[LOCATION|Quincy]], MA [[ZIP|02169]].
+Joint pain in both hands for 3 months. CRP 18.
+From: Dr. [[NAME|Alan Brooks]], fax [[PHONE|555.902.3381]]
+---
+portal: [[EMAIL|m.kim22@example.com]] wrote on [[DATE|4/3/25]]: "can i get my test results? my member id is [[ID|MBR-30091274]]"
+session ip [[IP|172.16.4.9]]. results link [[URL|https://portal.example.org/r/4471]]
+---
+DISCHARGE SUMMARY
+[[NAME|Irene Walsh]], [[AGE|95]]-year-old woman, admitted [[DATE|03/25/2025]] with a hip fracture after a fall.
+Surgery on day 2. Physiotherapy started 1 day post-op.
+Discharged to [[LOCATION|Oakwood Care Home]]. Follow up with Dr. [[NAME|Bell]] in 2 weeks. Bell's palsy noted in history.
+---
