@@ -28,12 +28,12 @@ def is_covered(g, pred):
     return any(s <= g[0] and g[1] <= e for s, e, label in pred)
 
 
-def evaluate(notes):
+def evaluate(notes, detector=find_phi):
     stats = {}
     leaked_notes = 0
 
     for text, gold in notes:
-        pred = [(s, e, label) for s, e, label, value in find_phi(text)]
+        pred = [(s, e, label) for s, e, label, value in detector(text)]
 
         for g in gold:
             stats.setdefault(g[2], [0, 0, 0])
