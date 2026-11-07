@@ -1,0 +1,13 @@
+Patient: [[NAME|Arun]]
+Date: [[DATE|03/11/2026]]
+[[NAME|Arun]] is a 35 year old male with heavy stomach pain for 2days.
+His wife [[NAME|Keerthi]] called from [[PHONE|555-354-6457]]
+The patient was attened by Dr. [[NAME|Kiruba]] at [[LOCATION|union Hospital]]
+BP 120/80
+---
+phone call on [[DATE|04/06/2026]].
+[[NAME|Eva]] called to ask about health condition of her father [[NAME|Charles]], a [[AGE|92]]-year-old man.
+He had cough since 3 days ago.
+She asked us to eamil the report to [[EMAIL|eva.c@example.com]].
+Nurse [[NAME|Mia]] advised a Visit to the hospital
+---
