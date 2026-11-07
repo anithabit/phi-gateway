@@ -11,3 +11,101 @@ He had cough since 3 days ago.
 She asked us to eamil the report to [[EMAIL|eva.c@example.com]].
 Nurse [[NAME|Mia]] advised a Visit to the hospital
 ---
+DISCHARGE SUMMARY
+Patient: [[NAME|Daniel Moore]]    MRN: [[MRN|00872341]]
+Admitted: [[DATE|March 3, 2025]]    Discharged: [[DATE|03/08/2025]]
+Mr. [[NAME|Moore]] is a 58-year-old man treated at [[LOCATION|Riverside Medical Center]] for Crohn's disease.
+He was seen by Dr. [[NAME|Helen Crohn]] during his stay.
+Follow up in 2 weeks. Call [[PHONE|(555) 210-3344]].
+---
+ED NOTE [[DATE|04/04/2004]] 22:15
+pt [[NAME|Hope]], 41 y/o F, c/o chest pain x 2 hrs. Brought by brother [[NAME|Will]].
+BP 150/95, HR 104, SpO2 97%, glucose 118.
+Plan: ECG, troponin. Admit to cardiology.
+---
+Dear Dr. [[NAME|Samuel Price]],
+I am referring [[NAME|Nora Bennett]], born [[DATE|July 9, 1987]], who lives at [[LOCATION|18 Maple Avenue]], [[LOCATION|Cambridge]], MA [[ZIP|02139]].
+She has had asthma since 2016 and her breathing has worsened over the last month.
+Please assess her for further treatment.
+Sincerely, Dr. [[NAME|Priya Nair]]
+Fax: [[PHONE|555.420.7781]]
+---
+msg from [[EMAIL|nora.b87@example.com]] on [[DATE|3/9/25]]:
+hi dr [[NAME|Kamal]], my insurance id is [[ID|HP-445120]]. pls refill my inhaler, i ran out 2 days ago.
+logged in from [[IP|10.0.3.15]]
+reply sent via [[URL|https://portal.example.org/m/882]]
+---
+Telephone note [[DATE|April 2, 2025]].
+[[NAME|April Will]] called about her mother [[NAME|Dorothy Will]], age [[AGE|96]].
+Callback number [[PHONE|5559023311]].
+Mother is 2 weeks post-op and recovering well. Next review in [[DATE|April]].
+---
+LAB REPORT
+Patient: [[NAME|Marcus Hill]]    MRN: [[MRN|00561278]]    Collected: [[DATE|2025-03-14]]
+Hb 12.5 g/dL | WBC 7.2 | Platelets 250 | Glucose 105 mg/dL | Creatinine 0.9
+Ordered by: Dr. [[NAME|Sofia Rees]], [[LOCATION|Northgate Lab Services]]
+---
+NEUROLOGY CONSULT
+Dr. [[NAME|James Parkinson]] reviewed Mr. [[NAME|Thomas Reed]] on [[DATE|14 Mar 2025]].
+Mr. [[NAME|Reed]] is a 71-year-old man with Parkinson's disease diagnosed in 2018.
+Tremor is worse over the last 6 months. Started levodopa 100 mg three times a day.
+Review in 3 months at [[LOCATION|Hillview Neurology Clinic]].
+---
+PRESCRIPTION
+Patient: [[NAME|Grace Liu]]   DOB: [[DATE|11/02/1990]]
+Amoxicillin 500 mg, one capsule three times daily for 7 days.
+Prescriber: Dr. [[NAME|Peter Haddad]]   DEA license: [[ID|BH4419027]]
+Pharmacy fax [[PHONE|(555) 640-1290]]
+---
+PROGRESS NOTE [[DATE|03/20/2025]]
+S: [[NAME|Hope Turner]] says the headache is better since yesterday.
+O: BP 128/82, HR 76, temp 98.6 F.
+A: Migraine, improving.
+P: Continue current meds. Her husband [[NAME|Arivu]] will drive her home.
+---
+RADIOLOGY REPORT
+Name: [[NAME|Walter Grant]]   Age: [[AGE|101]]   MRN: [[MRN|00918244]]
+Exam date: [[DATE|March 21, 2025]]
+CT chest shows a 2 cm nodule in the right upper lobe. Compared with prior scan from 2023, it is larger.
+Reported by Dr. [[NAME|Lena Fischer]], [[LOCATION|St. Anne's Hospital]], [[LOCATION|Springfield]].
+---
+SOCIAL WORK NOTE
+Met with patient [[NAME|Kaviya Murugan]] and her son [[NAME|Senthil]].
+She lives alone at [[LOCATION|12 Gandhi Street]], [[LOCATION|Mylapore]], [[LOCATION|Chennai]], Tamil Nadu [[ZIP|600004]].
+Son can be reached at [[EMAIL|senthil.m@example.com]] or [[PHONE|555-718-2204]].
+Home help to start in 1 week.
+---
+billing note: acct no [[ID|ACC-7781203]] for pt [[NAME|murugan selvam]], visit on [[DATE|02/27/2025]].
+insurance member id [[ID|MBR-55290018]]. patient ssn [[SSN|900-44-1187]] verified.
+---
+ICU TRANSFER NOTE
+[[NAME|Harold Vance]], [[AGE|90]] y/o M, transferred from [[LOCATION|Lakeside General Hospital]] on [[DATE|3/18/25]] for sepsis.
+Daughter [[NAME|Faith Vance]] is the contact, phone [[PHONE|555.301.9946]].
+Hodgkin lymphoma treated in 2010, in remission.
+---
+NURSING NOTE 06:30
+Pt Mrs. [[NAME|Ito]] slept well. Pain 2/10. Walked 20 m with walker.
+Family visit planned for tomorrow. Room 4B.
+---
+DISCHARGE INSTRUCTIONS
+[[NAME|Benjamin Cole]], you were treated at [[LOCATION|Mercy Hospital]] from [[DATE|March 10]] to [[DATE|March 13, 2025]].
+Take aspirin 81 mg daily. Do not lift heavy things for 6 weeks.
+Questions? Call the nurse line [[PHONE|555-402-7700]] or visit [[URL|www.mercyhospital-example.org/care]].
+---
+ENDOCRINOLOGY FOLLOW-UP
+Ms. [[NAME|Abigail Stone]], 89 years old, has Graves' disease since 2015.
+Seen by Dr. [[NAME|Robert Graves]] on [[DATE|03/03/2025]]. TSH 0.2, free T4 1.9.
+Plan: increase methimazole. Labs again in 6 weeks.
+---
+HOME VISIT
+Visited Mr. [[NAME|Joseph Bauer]] at [[LOCATION|7 Cedar Court]], [[LOCATION|Brookline]] [[ZIP|02446-1123]] on [[DATE|Mar 22, 2025]].
+Wife [[NAME|Margaret]] manages his medications. He is 84 and uses a cane.
+Telehealth login from [[IP|192.168.0.24]] tested OK.
+---
+EMERGENCY DEPARTMENT
+PATIENT: [[NAME|SAMUEL OKAFOR]]   MRN [[MRN|00334187]]   DATE: [[DATE|14-MAR-2025]]
+CHIEF COMPLAINT: FALL AT HOME 3 HOURS AGO.
+HISTORY: 67 YO MALE WITH ALZHEIMER'S DISEASE. LIVES WITH DAUGHTER [[NAME|ADA]].
+X-RAY: NO FRACTURE. DISCHARGED WITH FAMILY.
+Electronically signed: Dr. [[NAME|Mei Tanaka]] [[DATE|03/14/2025]] 18:40
+---
