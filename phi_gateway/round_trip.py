@@ -1,9 +1,10 @@
 from phi_gateway.gateway import deidentify, rehydrate
 from phi_gateway.llm import ask_llm
 
-NOTE = """Call 555-246-8135 or (555) 246-8135 or 5552468135 or 555.246.8135.
-Also +1 555 246 8135 and 555 246 8135 ext. 12.
-BP 120/80, Hb 12.5, 3 days post-op, diagnosed in 2019."""
+NOTE = """Patient seen on 03/14/2025. MRN: 00123456. Lives near Boston 02115.
+Contact daughter at 555-999-1111 or anna.r@example.com. SSN: 123-45-6789.
+Portal: https://portal.example.org/p/12 (login from 192.168.1.10).
+Wound check 3 days post-op. BP 120/80."""
 
 INSTRUCTION = (
     "Summarise the clinical note below in 2 sentences. "
