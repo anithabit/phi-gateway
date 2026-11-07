@@ -8,6 +8,7 @@ PATTERNS = {
     "IP": r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b",
     "DATE": r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",
     "MRN": r"(?<=MRN: )\d+|(?<=MRN:)\d+|(?<=MRN )\d+",
+    "AGE": r"(?i)\b\d{2,3}(?=[- ]?(?:year|yo\b|y/o))|(?<=age )\d{2,3}|(?<=age: )\d{2,3}|(?<=aged )\d{2,3}",
 }
 
 
@@ -15,6 +16,8 @@ def find_phi(text):
     found = []
     for label, pattern in PATTERNS.items():
         for match in re.finditer(pattern, text):
+            if label == "AGE" and int(match.group()) <= 89:
+                continue
             found.append((match.start(), match.end(), label, match.group()))
     found.sort()
     return found
