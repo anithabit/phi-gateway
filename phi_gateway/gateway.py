@@ -5,17 +5,20 @@ from phi_gateway.regex_detector import find_phi
 
 def deidentify(text):
     mapping = {}
+    replacements = {}
+    seen = {}
     counters = {}
 
     for start, end, label, value in find_phi(text):
-        if value in mapping.values():
-            continue
-        counters[label] = counters.get(label, 0) + 1
-        placeholder = f"[{label}_{counters[label]}]"
-        mapping[placeholder] = value
+        key = label + ":" + re.sub(r"\W", "", value).lower()
+        if key not in seen:
+            counters[label] = counters.get(label, 0) + 1
+            seen[key] = f"[{label}_{counters[label]}]"
+            mapping[seen[key]] = value
+        replacements[value] = seen[key]
 
     masked_text = text
-    for placeholder, value in mapping.items():
+    for value, placeholder in replacements.items():
         masked_text = masked_text.replace(value, placeholder)
 
     return masked_text, mapping
