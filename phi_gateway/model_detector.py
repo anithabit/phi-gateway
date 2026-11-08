@@ -1,6 +1,7 @@
 import torch
 from transformers import AutoModelForTokenClassification, AutoTokenizer
 
+from phi_gateway.regex_detector import find_phi
 from phi_gateway.train import split_words
 
 MODEL_DIR = "models/phi-model"
@@ -32,12 +33,25 @@ def model_find(text, threshold=0.5):
             prev_label = None
             continue
         label = tag[2:]
-        if label == prev_label and tag.startswith("I-"):
+        if label == prev_label:
             found[-1][1] = e
         else:
             found.append([s, e, label])
         prev_label = label
     return [(s, e, label, text[s:e]) for s, e, label in found]
+
+
+MODEL_TYPES = {"NAME", "LOCATION", "DATE", "ID"}
+
+
+def combined_find(text, threshold=0.5):
+    found = find_phi(text)
+    for s, e, label, value in model_find(text, threshold):
+        overlaps = any(s < fe and fs < e for fs, fe, fl, fv in found)
+        if label in MODEL_TYPES and not overlaps:
+            found.append((s, e, label, value))
+    found.sort()
+    return found
 
 
 if __name__ == "__main__":
@@ -48,5 +62,5 @@ if __name__ == "__main__":
     path = sys.argv[1]
     threshold = float(sys.argv[2])
     notes = load_notes(path)
-    stats, leaked = evaluate(notes, detector=lambda text: model_find(text, threshold))
+    stats, leaked = evaluate(notes, detector=lambda text: combined_find(text, threshold))
     show(stats, leaked, len(notes))
