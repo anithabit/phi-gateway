@@ -32,3 +32,5 @@ v1 trained on 2000 simple synthetic notes. v2 trained on 3000 notes with more va
 - Groq model deprecations: https://console.groq.com/docs/deprecations
 - Microsoft Presidio: https://microsoft.github.io/presidio/
 - spaCy en_core_web_lg
+
+Utility check (5 notes): word overlap original vs masked 0.57; original vs original 0.50 (LLM's own variation). See utility_check.md.
