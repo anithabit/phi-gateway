@@ -22,4 +22,10 @@ def round_trip(note):
     return restored
 
 if __name__ == "__main__":
-    round_trip(NOTE)
+    import sys
+
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], encoding="utf-8") as f:
+            round_trip(f.read())
+    else:
+        round_trip(NOTE)

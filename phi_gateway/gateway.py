@@ -1,4 +1,5 @@
 import re
+EPONYM = r"(?!['’]s (?:disease|syndrome|palsy|lymphoma))"
 
 from phi_gateway.model_detector import combined_find
 
@@ -19,7 +20,7 @@ def deidentify(text):
 
     masked_text = text
     for value, placeholder in replacements.items():
-        masked_text = masked_text.replace(value, placeholder)
+        masked_text = re.sub(re.escape(value) + EPONYM, placeholder, masked_text)
 
     return masked_text, mapping
 
