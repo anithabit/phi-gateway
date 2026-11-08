@@ -15,6 +15,8 @@ Test set: 20 hand-labelled notes, 111 identifiers.
 |---|---|---|---|
 | Regex only | 0.97 | 0.29 | 100% |
 | Presidio | 0.47 | 0.63 | 80% |
+| Model + regex (v1) | 0.54 | 0.64 | 50% |
+Model: DistilBERT (distilbert-base-cased), 65,210,137 parameters.
 
 - Regex: precise, but finds no names or places.
 - Presidio: finds names, but masks relative times ("3 days ago") and misses MRN/ZIP.
