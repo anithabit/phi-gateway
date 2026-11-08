@@ -1,10 +1,9 @@
 from phi_gateway.gateway import deidentify, rehydrate
 from phi_gateway.llm import ask_llm
 
-NOTE = """Patient seen on 03/14/2025. MRN: 00123456. Lives near Boston 02115.
-Contact daughter at 555-999-1111 or anna.r@example.com. SSN: 123-45-6789.
-Portal: https://portal.example.org/p/12 (login from 192.168.1.10).
-Wound check 3 days post-op. BP 120/80."""
+NOTE = """Patient Meena Raghavan was seen on 03/14/2025 at City Hospital.
+Her husband Ravi called from 555-246-8135. Dr. James Parkinson confirmed Parkinson's disease.
+She is 67 years old. Pain started 3 days ago."""
 
 INSTRUCTION = (
     "Summarise the clinical note below in 2 sentences. "

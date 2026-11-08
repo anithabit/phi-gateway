@@ -1,6 +1,6 @@
 import re
 
-from phi_gateway.regex_detector import find_phi
+from phi_gateway.model_detector import combined_find
 
 
 def deidentify(text):
@@ -9,7 +9,7 @@ def deidentify(text):
     seen = {}
     counters = {}
 
-    for start, end, label, value in find_phi(text):
+    for start, end, label, value in combined_find(text, 0.2):
         key = label + ":" + re.sub(r"\W", "", value).lower()
         if key not in seen:
             counters[label] = counters.get(label, 0) + 1
