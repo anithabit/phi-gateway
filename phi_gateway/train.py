@@ -29,7 +29,7 @@ def word_tags(words, gold):
         tags.append(tag)
     return tags
 
-    def encode(text, gold, tokenizer):
+def encode(text, gold, tokenizer):
     words = split_words(text)
     tags = word_tags(words, gold)
     enc = tokenizer([text[s:e] for s, e in words], is_split_into_words=True, truncation=True, max_length=256)
@@ -44,7 +44,7 @@ def word_tags(words, gold):
     enc["labels"] = labels
     return dict(enc)
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = AutoModelForTokenClassification.from_pretrained(
         MODEL_NAME,
