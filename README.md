@@ -16,7 +16,9 @@ Test set: 20 hand-labelled notes, 111 identifiers.
 | Regex only | 0.97 | 0.29 | 100% |
 | Presidio | 0.47 | 0.63 | 80% |
 | Model + regex (v1) | 0.54 | 0.64 | 50% |
-Model: DistilBERT (distilbert-base-cased), 65,210,137 parameters.
+| Model + regex (v2) | 0.68 | 0.82 | 25% |
+Model: DistilBERT (distilbert-base-cased), 65,210,137 parameters. Threshold 0.2, chosen on the dev set.
+v1 trained on 2000 simple synthetic notes. v2 trained on 3000 notes with more varied templates (locations, IDs, date formats), based on dev-set errors.
 
 - Regex: precise, but finds no names or places.
 - Presidio: finds names, but masks relative times ("3 days ago") and misses MRN/ZIP.
