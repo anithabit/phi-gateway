@@ -31,3 +31,23 @@ A log of things that went wrong, written as I go.
 - **Why:** My phone regex needed a dash, dot or space before the last 4 digits. This number had no dash, so the regex did not find it.
 - **Fix:** I made that dash optional by adding "?" in the regex. Now 5551234567 becomes [PHONE_3]. I also checked that "120/80" is still not masked.
 - **Lesson:** Test each pattern with different formats, not only the normal one.
+### 2026-11-08 Colab used my old code
+- **What I tried:** I fixed a spacing error in train.py and ran it on Colab.
+- **What went wrong:** Colab showed the same error again.
+- **Why:** I pushed to GitHub before saving the file. So GitHub had the old code.
+- **Fix:** Saved the file, checked it, pushed again, then ran `git pull` on Colab.
+- **Lesson:** Always save before I push.
+
+### 2026-11-08 First model missed many places and IDs
+- **What I tried:** I trained my model on 2000 simple fake notes.
+- **What went wrong:** Half of my test notes still leaked some data.
+- **Why:** My fake notes had very few hospital names and no ID numbers.
+- **Fix:** I made better fake notes (more sentence types, places and IDs) and trained again. Leaks went from 50% to 25%.
+- **Lesson:** Better training data helps more than anything else.
+
+### 2026-11-08 "Crohn's disease" was hidden as a name
+- **What I tried:** I tested a note with "Dr. Hannah Crohn" and "Crohn's disease".
+- **What went wrong:** The model hid the disease name too, so the LLM did not know the disease.
+- **Why:** My training notes had no example of Crohn's disease.
+- **Fix:** I added a rule: if a name is followed by "'s disease", do not hide it.
+- **Lesson:** A disease named after a person must not be hidden.
