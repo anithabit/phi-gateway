@@ -1,0 +1,16 @@
+
+1. MASKED NOTE SENT TO LLM:
+Pt [NAME_1], [AGE_1] y/o M, seen [DATE_1] at [LOCATION_1].
+Daughter [NAME_2] called from [PHONE_1], email [EMAIL_1].
+Dr. [NAME_3] suspects Crohn's disease. Symptoms for 2 weeks. BP 130/85.
+
+2. RAW LLM REPLY:
+Patient [NAME_1], a [AGE_1]-year-old male, was seen on [DATE_1] at [LOCATION_1] with a
+two-week history of symptoms and a blood pressure of 130/85. His daughter [NAME_2] called
+from [PHONE_1] and emailed at [EMAIL_1], and Dr. [NAME_3] suspects Crohn's disease.
+
+3. RESTORED REPLY:
+Patient Karthik Subramanian, a 94-year-old male, was seen on 11/02/2025 at Kaveri Care
+Hospital with a two-week history of symptoms and a blood pressure of 130/85. His daughter
+Divya called from (555) 902-4411 and emailed at divya.s@example.com, and Dr. Hannah Crohn
+suspects Crohn's disease.

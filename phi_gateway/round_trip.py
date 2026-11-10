@@ -1,3 +1,6 @@
+import sys
+import textwrap
+
 from phi_gateway.gateway import deidentify, rehydrate
 from phi_gateway.llm import ask_llm
 
@@ -10,20 +13,26 @@ INSTRUCTION = (
     "Keep every placeholder such as [PHONE_1] exactly as written.\n\n"
 )
 
+
+def show(title, text):
+    print("\n" + title)
+    for line in text.splitlines():
+        print(textwrap.fill(line, width=90, break_on_hyphens=False, break_long_words=False))
+
+
 def round_trip(note):
     masked, mapping = deidentify(note)
-    print("1. MASKED NOTE SENT TO LLM:\n", masked)
+    show("1. MASKED NOTE SENT TO LLM:", masked)
 
     reply = ask_llm(INSTRUCTION + masked)
-    print("\n2. RAW LLM REPLY:\n", reply)
+    show("2. RAW LLM REPLY:", reply)
 
     restored = rehydrate(reply, mapping)
-    print("\n3. RESTORED REPLY:\n", restored)
+    show("3. RESTORED REPLY:", restored)
     return restored
 
-if __name__ == "__main__":
-    import sys
 
+if __name__ == "__main__":
     if len(sys.argv) > 1:
         with open(sys.argv[1], encoding="utf-8") as f:
             round_trip(f.read())

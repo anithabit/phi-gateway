@@ -1,0 +1,16 @@
+TYPE         PREC  RECALL     F1   TP   FP   FN
+AGE          0.00    0.00   0.00    0    0    4
+DATE         0.27    0.73   0.39   16   44    6
+EMAIL        1.00    1.00   1.00    3    0    0
+ID           0.06    0.25   0.09    1   17    3
+IP           1.00    1.00   1.00    2    0    0
+LOCATION     0.75    0.40   0.52    6    2    9
+MRN          0.00    0.00   0.00    0    0    4
+NAME         0.78    0.74   0.76   32    9   11
+PHONE        0.89    1.00   0.94    8    1    0
+SSN          0.50    1.00   0.67    1    1    0
+URL          0.20    0.50   0.29    1    4    1
+ZIP          0.00    0.00   0.00    0    0    3
+
+OVERALL   precision 0.47   recall 0.63
+LEAK RATE 16/20 notes = 80%

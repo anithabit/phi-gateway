@@ -11,6 +11,12 @@ then restores them in the LLM's reply. The mapping stays on my machine and is ne
 3. `rehydrate(reply, mapping)` puts the real values back. A placeholder that is not in the mapping is left as it is
    and a warning is printed. I never guess, because a wrong value could point to the wrong patient.
 
+## Demo video and trained model
+
+- Demo video (3:36): https://drive.google.com/file/d/1Qinq-YC7zR9Jnj_I2MsFaJCpMzFUzQpk/view?usp=sharing
+- Trained model (v2, 241 MB): https://drive.google.com/file/d/1vB_XSvGB97Vcy_czVZsX_n9nVumPzUQn/view?usp=sharing
+  Unzip it in the project folder so the files are in `models/phi-model/`. Then you can skip training.
+
 ## Setup
 
 Python 3.12.
